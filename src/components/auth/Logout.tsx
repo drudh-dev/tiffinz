@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import {
   Drawer,
   DrawerClose,
@@ -12,7 +11,6 @@ import {
 } from "@/components/ui/drawer";
 import { LogOutIcon } from "lucide-react";
 import { redirect } from "next/navigation";
-
 
 function LogoutButton() {
   return (
@@ -27,7 +25,7 @@ function LogoutButton() {
           {/* <DrawerDescription>This action cannot be undone.</DrawerDescription> */}
         </DrawerHeader>
         <DrawerFooter>
-          <DrawerClose onClick={()=>redirect("/logout")}>Logout</DrawerClose>
+          <DrawerClose onClick={() => redirect("/logout")}>Logout</DrawerClose>
           <DrawerClose variant={"outline"}>Cancel</DrawerClose>
         </DrawerFooter>
       </DrawerContent>
